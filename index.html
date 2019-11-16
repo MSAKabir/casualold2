@@ -51,19 +51,27 @@
 
 
 .navbar a:hover {
-  background: #ddd;
-  border:5px solid #848479;
-  padding: 2px;
-  color: black;
+  background: rgb(0,20,0);
+  border:3px solid rgb(200,200,200);
+  padding: 3px;
+  color: rgb(255,255,240);
   z-index: 0;
+}
+
+.navbar a.active{
+background-color: rgb(200,200,200);
+color: rgb(0,0,50);
+border:3px solid rgb(120,120,80);
+padding: 3px;
+	   
+
 }
 
 
   nav li {
   display: inline-block;
-  margin-left: 3.5vw;
   position: relative;
-  padding-top: 2%;
+
 
 }
 
@@ -1404,34 +1412,34 @@ font-size: 2vw;
 
 
 
-<div class="navbar">
+<div class="navbar" id = "navbar">
       
 <nav>
 
-<ul>
-
-<li><a href="#slider">HOME</a></li>
-
-<li><a href="#about">ABOUT ME</a></li>
-
-<li><a href="#Education">BACKGROUND</a></li>
-
-<li><a href="#P">RESEARCH</a></li>
-
-<li><a href="#projectt">PROJECTS</a></li>
-
-<li><a href="#sklll">SKILLS</a></li>
-
-<li><a href="#code">PROGRAMMING</a></li>
-
-<li><a href="#course">COURSES</a></li>
-
-<li><a href="#extraa">ACHIEVEMENTS</a></li>
-
-<li><a href="#contactt">CONTACT</a></li>
 
 
-</ul>
+<li><a class="btn active" href="#slider">HOME</a></li>
+
+<li><a class="btn" href="#about">ABOUT ME</a></li>
+
+<li><a class="btn"  href="#Education">BACKGROUND</a></li>
+
+<li><a class="btn"  href="#P">RESEARCH</a></li>
+
+<li><a class="btn"  href="#projectt">PROJECTS</a></li>
+
+<li><a class="btn"  href="#sklll">SKILLS</a></li>
+
+<li><a class="btn"  href="#code">PROGRAMMING</a></li>
+
+<li><a class="btn"  href="#course">COURSES</a></li>
+
+<li><a class="btn"  href="#extraa">ACHIEVEMENTS</a></li>
+
+<li><a class="btn"  href="#contactt">CONTACT</a></li>
+
+
+
 </nav>
 </div>
 
@@ -2357,6 +2365,34 @@ Oli Lowna Baroi, <b>Md. Shaikh Abrar Kabir</b>, Azhar Niaz, Md. Jahidul Islam, M
 
 
 <script>
+
+
+
+
+
+var header = document.getElementById("navbar");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var slideIndex = 0;
 showSlides();
 
