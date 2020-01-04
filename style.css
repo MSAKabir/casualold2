@@ -58,7 +58,10 @@ position: center}
   @media only screen and (max-width: 600px) {
       .slider {
     padding-top: 20%;
-    height: 100px;
+    height: 200px;
     max-width: 90%;
+  }
+  .slide-viewer {
+    height: 200px;
   }
  }
