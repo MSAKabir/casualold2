@@ -60,6 +60,7 @@ position: center}
     padding-top: 20%;
     height: 200px;
     max-width: 90%;
+    max-height: 50%;
   }
   .slide-viewer {
     height: 200px;
