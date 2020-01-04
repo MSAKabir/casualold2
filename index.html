@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
- 
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
 
 
 
@@ -10,90 +17,7 @@
 
 
 
-<title>Md Shaikh Abrar Kabir</title>
-<link rel="shortcut icon" type = "image/x-icon" href = "webicon.png">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
- <meta name="viewport" content="width=device-width, initial-scale=.9">
- 
-<style>
 
-
-
-
-
-
-
-
-/*------------------------------------------                               Navigation Bar                             -------------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-.navbar {
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  border-bottom: 5px solid #BEBEBF;
-  z-index: 1;
-  padding-bottom: 10px;
-}
-
-.navbar a {
- 
-  text-decoration: none;
-  text-transform: uppercase;
-  background-color: rgb(150,150,150);
-   color: rgb(0,5,0);
-  border:3px solid rgb(0,10,0);
-  padding: 3px;
- font-size: 20px;
-}
-
-
-.navbar a:hover {
-  border:4px solid rgb(200,200,200);
-  background-color: rgb(100,100,100);
-  padding: 2px;
-  color: rgb(200,200,200);
-  z-index: 0;
-}
-
-.navbar a.active{
-background-color: rgb(200,200,200);
-color: rgb(0,0,50);
-border:4px solid rgb(130,130,100);
-padding: 2px;
-}
-
-
-  nav li {
-  display: inline-block;
-  position: relative;
-
-}
-
-
-
-@media only screen and (max-width: 1900px) {
-
- 
- .navbar a {
- font-size: 15px;
-}
- 
- 
-
-
-
-
-
-
-}
 
 
 
@@ -117,70 +41,10 @@ padding: 2px;
   background-image: url("w15.JPG");
   padding-bottom: 500px;
 
-
-}
-
-/* Slideshow container */
-.slideshow-container {
-  margin-top: 55px;
-  position: relative;
-}
-
-.txtcontainer {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.text {
-  color: #B8A7CD;
-  font-size: 4vw;
-    position: absolute;
-position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding-right: 0%
 }
 
 
 
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 5s;
-  animation-name: fade;
-  animation-duration: 5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-
-
-
-
-
-
-
-
-
-
-
- 
- 
 
 
 
@@ -321,6 +185,8 @@ padding-bottom: 500px;
 
 
 
+
+
 /*------------------------------------------                               PROJECTS                            -------------------------------------------------------------------*/
 
 
@@ -410,6 +276,11 @@ font-size: 1.4vw;
 
   color: #DDDEDD;
 }
+
+
+
+
+
 
 
 
@@ -546,9 +417,6 @@ padding-bottom: 500px;
 
 
 
-
-
-
 /*------------------------------------------                       PROGRAMMING         -------------------------------------------------------------------*/
 
 
@@ -577,8 +445,6 @@ padding-bottom: 500px;
 #code h1{
   font-size: 3vw;
 }
-
-
 
 
 
@@ -659,10 +525,12 @@ background-image: url("w9a.jpg");
  
  
  
- 
- 
- 
- 
+
+
+
+
+
+
 
 /*------------------------------------------                     EXTRA                    -------------------------------------------------------------------*/
 
@@ -704,6 +572,14 @@ background-image: url("w2.jpg");
   
  }
   
+
+
+
+
+
+
+
+
 
 
 
@@ -1388,88 +1264,20 @@ margin-top: -100px;
  
  
 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
-</style>
+  </style>
 </head>
 
 
 
+<body data-spy="scroll" data-target=".navbar" data-offset="150">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
 
 
-
-
-
-
-
- <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
- 
-  /*------------------------------------------                                                                -------------------------------------------------------------------*/
-
- 
- /*------------------------------------------                             HTML                                -------------------------------------------------------------------*/
-
-
-
-  /*------------------------------------------                                                                -------------------------------------------------------------------*/
-
- 
- 
-  /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<body style="background-color: #BEBEBF;   font-family: Times new roman;">
-
-
-
-
-
-<!------------------------------------------------------------------------------    Navigation Bar     ------------------------------------------------------------------------------------------>
-
-
-
-
-
-
-<div class="navbar" id = "navbar">
-      
-<nav>
-
-
-
-<li><a class="btn active" href="">HOME</a></li>
+<li><a class="btn active" href="#slider">HOME</a></li>
 
 <li><a class="btn" href="#about">ABOUT ME</a></li>
 
@@ -1489,12 +1297,17 @@ margin-top: -100px;
 
 <li><a class="btn"  href="#contactt">CONTACT</a></li>
 
-<a class ="btn" onmouseover="this.style.backgroundColor='rgb(20,0,0)';this.style.color='rgb(240,240,240)'" onmouseout="this.style.backgroundColor='rgb(150,150,150)';this.style.color='rgb(30,0,0)';" style = "color: rgb(30,0,0)" id="demo" href="Switch.html" target="_blank">Switch</a>
+<li><a class ="btn"  style = "color: rgb(30,0,0)" id="demo" href="Switch.html" target="_blank">SWITCH</a></li>
+
+        </ul>
+    </div>
+
+</nav>        
 
 
 
-</nav>
-</div>
+
+
 
 
 
@@ -1513,43 +1326,31 @@ margin-top: -100px;
 
 <section id="slider">
 
-<div class="slideshow-container">
-<div class="txtcontainer">
-<div class="mySlides fade">
-  <img src="img/bnr4.jpg" style="width:100%; height=500">
-  <div class="text" style="position: absolute; top: 45%;left: 60%;transform: translate(-50%, -50%); float: right">Md <br>Shaikh<br>Abrar <br>Kabir</div>
-</div>
+      <div class="slider">
+        <div class="slide-viewer">
+          <div class="slide-group">
+            <div class="slide slide-1">
+              <img src="bnr4.jpg" height=100% width=100% alt="slide_01" >
+            </div>
+            <div class="slide slide-2">
+              <img src="runner2.jpg" height=100% width=100% alt="slide_02"  />
+            </div>
+            <div class="slide slide-3">
+              <img src="champ2.jpg" height=100% width=100% alt="slide_03"  />
+            </div>
 
-<div class="mySlides fade">
-  <img src="runner2.jpg" style="width:100%; height=500">
-  <div class="text"></div>
-</div>
+          </div>
+        </div>
+        <div class="slide-buttons"></div>
+      </div>
 
-<div class="mySlides fade">
-  <img src="champ2.jpg" style="width:100%;  height=500">
-  <div class="text"></div>
-</div>
-<!--
-<div class="mySlides fade">
-  <img src="img/bnr6.jpg" style="width:100%; height=500">
-  <div class="text">WELCOME ! </div>
-</div>
--->
-
-
-</div>
-</div>
-
-<br>
+    <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="index.js"></script>
 
 </section>
 
-<div style="visibility: hidden;">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-   <span class="dot"></span> 
-</div>
+
 
 
 
@@ -1655,10 +1456,10 @@ margin-top: -100px;
 
                 <ul style="list-style-type:square;padding-left: 20px">
 
-                	<li><a href="https://drive.google.com/open?id=1HkFUS0jB_4tAx5PxY5XN3vU_VyhlDqQn" target="_blank" style="color: #CECECE"> Comparing the BER Performance of SFBC-OFDM System with STBC-OFDM System in FADING MIMO Channel (Undergraduate Thesis)</a>
+                  <li><a href="https://drive.google.com/open?id=1HkFUS0jB_4tAx5PxY5XN3vU_VyhlDqQn" target="_blank" style="color: #CECECE"> Comparing the BER Performance of SFBC-OFDM System with STBC-OFDM System in FADING MIMO Channel (Undergraduate Thesis)</a>
               </li>
- 				
- 				<br/>
+        
+        <br/>
               <li>Comparison Between MFCC and PLP in Automatic Speech Recognition (ASR) of Bangla Speech Corpus</li>
 
 
@@ -1859,7 +1660,7 @@ doi: 10.1109/ICASERT.2019.8934462</a> <br/> <br/>
                         
                 <ul class="pro4">
 
-                	<li><a href="https://shaikh-abrar-kabir.github.io/AudioExcel/" target="_blank">Excel Editor using Speech Recognition (GUI)</a></li>
+                  <li><a href="https://shaikh-abrar-kabir.github.io/AudioExcel/" target="_blank">Excel Editor using Speech Recognition (GUI)</a></li>
 
                   <li><a href="https://shaikh-abrar-kabir.github.io/Digital-Signal-Processing-using-PYTHON/" target="_blank">Digital Signal Processing</a></li>
 
@@ -1936,18 +1737,18 @@ doi: 10.1109/ICASERT.2019.8934462</a> <br/> <br/>
        </li>
 
                      
-			
-			  <li>CGPA CALCULATOR
+      
+        <li>CGPA CALCULATOR
                         
                             <ul class="pro4">
 
                         <li><a href="https://shaikh-abrar-kabir.github.io/android/" target="_blank">Android Studio</a></li>
-				
+        
                         <li><a href="https://shaikh-abrar-kabir.github.io/jframe/" target="_blank">Swing JFrame</a></li>
-				
-			<li><a href="https://shaikh-abrar-kabir.github.io/tkinter/" target="_blank">Python GUI</a></li>
-	
-	                    </ul>
+        
+      <li><a href="https://shaikh-abrar-kabir.github.io/tkinter/" target="_blank">Python GUI</a></li>
+  
+                      </ul>
 
                            </li>
 
@@ -2025,25 +1826,25 @@ doi: 10.1109/ICASERT.2019.8934462</a> <br/> <br/>
 
 
            <li><a href="https://drive.google.com/open?id=13T1kb-Wc_CIYf4ca5hpg3UkBRmkl9afp" target="_blank">Quartus (Verilog HDL)</a>
-		   
+       
                             <ul class="pro4">
-				    
+            
                                 <li><!--a href=</a-->
                                 4:1 Mux (simple & using 2:1 mux), 16:1 Mux using 4:1 Mux
                                 </li>
-				    
+            
                                 <li><!--a href=</a-->
                                 1 Digit BCD Adder
                                 </li>
-				    
+            
                                 <li><!--a href=</a-->
                                 4 bit Comparator, Full Adder, Up-Down Counter
                                 </li>
-				    
+            
                                 <li><!--a href=</a-->
                                 7 Segment Decoder
                                 </li>
-				    
+            
                                 <li><!--a href=</a-->
                                 Universal Shift Register
                                 </li>
@@ -2054,7 +1855,7 @@ doi: 10.1109/ICASERT.2019.8934462</a> <br/> <br/>
                                 
                             </ul>
                         </li>
-		
+    
 
 
 
@@ -2120,7 +1921,7 @@ doi: 10.1109/ICASERT.2019.8934462</a> <br/> <br/>
 <div class="container">
   <div class="skills CADENCE">75%</div>
 </div>
-	
+  
 <div class="jar">
 <p>Proteus</p></div>
 <div class="container">
@@ -2137,8 +1938,8 @@ doi: 10.1109/ICASERT.2019.8934462</a> <br/> <br/>
 <p>GNU Octave</p></div>
 <div class="container">
   <div class="skills GNUOctave">70%</div>
-</div>	
-	
+</div>  
+  
 <div class="jar">
 <p>Microsoft Excel</p></div>
 <div class="container">
@@ -2233,10 +2034,10 @@ doi: 10.1109/ICASERT.2019.8934462</a> <br/> <br/>
 <p>Flutter</p></div>
 <div class="container">
   <div class="skills FLUTTER">50%</div>
-</div>	
-	
-	
-	
+</div>  
+  
+  
+  
 <div class="jar">
 <p>Eclipse</p></div>
 <div class="container">
@@ -2415,7 +2216,7 @@ doi: 10.1109/ICASERT.2019.8934462</a> <br/> <br/>
 <div id="contactt">
 
 
-	
+  
 <h1 class="cnt"><u>Contact</u></h1>
 
 
@@ -2427,10 +2228,10 @@ doi: 10.1109/ICASERT.2019.8934462</a> <br/> <br/>
 
             <ul>
 
-            	<!--li class="cnt3"> <a href="" style="pointer-events: none;cursor: default;color:#D2DEC0;">+8801680504253</a></li-->
+              <!--li class="cnt3"> <a href="" style="pointer-events: none;cursor: default;color:#D2DEC0;">+8801680504253</a></li-->
               <li class="cnt3"> <a href="tel:+8801680504253" target="_blank" style="color:#D2DEC0;">+8801680504253</a></li>
-            	<li class="cnt3"> <a href="tel:+8801748260084" target="_blank" style="color:#D2DEC0;">+8801748260084</a></li>
-            	
+              <li class="cnt3"> <a href="tel:+8801748260084" target="_blank" style="color:#D2DEC0;">+8801748260084</a></li>
+              
                 
             </ul>
 
@@ -2454,7 +2255,6 @@ doi: 10.1109/ICASERT.2019.8934462</a> <br/> <br/>
 
 </div>
 
-</body>
 
 
 
@@ -2543,4 +2343,12 @@ function showSlides() {
 </script>
 
 
+
+
+
+
+
+
+
+</body>
 </html>
